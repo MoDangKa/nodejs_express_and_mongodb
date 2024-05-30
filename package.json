@@ -5,7 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/MoDangKa/nodejs_express_and_mongodb.git",
   "scripts": {
-    "dev": "nodemon ./src/index.ts",
+    "dev:serve": "nodemon ./src/index.ts",
+    "dev": "concurrently  \"npm run dev:serve\"",
     "clean": "del-cli dist",
     "build:ts": "tsc",
     "build:copy": "cpx \"src/**/*.{html,json}\" dist",
