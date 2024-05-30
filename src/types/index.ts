@@ -7,5 +7,5 @@ export interface Product {
   quantity: number;
   description: string;
   organic: boolean;
-  id: string;
+  id: number;
 }
